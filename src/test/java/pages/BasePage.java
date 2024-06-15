@@ -8,6 +8,8 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
+// only basic methods
+
 public class BasePage {
 
     WebDriver driver;
@@ -22,6 +24,11 @@ public class BasePage {
 
     public WebElement findElement(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public WebElement findElementAndCheckClickability(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        //change the expected condition
     }
 
 

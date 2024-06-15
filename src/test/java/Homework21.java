@@ -9,12 +9,12 @@ import java.time.Duration;
 
 public class Homework21 extends BaseTest {
 
-    private WebDriverWait wait;
+    //private WebDriverWait wait;
     private Actions actions;
 
     @Test
     public void renamePlaylist() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        //wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         actions = new Actions(driver);
 
         // Login
